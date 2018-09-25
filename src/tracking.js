@@ -1,4 +1,5 @@
-window.tracking = window.tracking || {};
+const tracking = window.tracking || {};
+window.tracking = tracking;
 
 /**
  * Inherit the prototype methods from one constructor into another.
@@ -281,3 +282,5 @@ if (!navigator.getUserMedia) {
   navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
   navigator.mozGetUserMedia || navigator.msGetUserMedia;
 }
+
+module.exports = tracking
